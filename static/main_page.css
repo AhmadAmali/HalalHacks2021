@@ -1,0 +1,57 @@
+html, body{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.badges{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    display: inline-block;
+    padding: 3px;
+    font-size: 18px;
+}
+.fa-shield{
+    font-size: 25px;
+    padding: 10px;
+    margin:10px;
+}
+
+.todo-box{
+    margin: auto;
+    width: 95%;
+    padding: 5px;
+    background-color: #ddd;
+}
+
+.todo-heading{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.todo-tasks{
+    display: flex;
+    align-items: center;
+    width: 95%;
+}
+
+.left{
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 0px;
+}
+
+.program-goal{
+    font-size: 20px;
+}
+.category{
+    font-weight: 100;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+}
