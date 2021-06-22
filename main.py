@@ -1,22 +1,16 @@
-from setuptools import setup
+from pprint import pprint as pp
+from flask import Flask, flash, redirect, render_template, request, url_for
+from stocks import query_api
+app = Flask(__name__)
+@app.route('/')
 
-setup(
-    name="Halal-Hacks",
-    version='0.1',
-    url='',
-    description='',
-    author='Iqraa',
-    author_email='',
-    packages=["project"],
-    include_package_data=True,
-    zip_safe=False,
-    install_requires=[
-        'Flask',
-    ],
-    classifiers=[
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-    ]
-)
+def index():
+     return render_template(
+        'index.html')
+
+
+
+
+
+if __name__=='__main__':
+    app.run(debug=True)
