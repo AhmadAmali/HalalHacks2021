@@ -1,42 +1,47 @@
-html, body{
-    margin: 0px;
-    padding:0px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
 }
 
-.title{
-    font-family: 'Stint Ultra Condensed', cursive;
-    font-size: 28px;
-    line-height: 0px;
+.title {
+  font-family: "Stint Ultra Condensed", cursive;
+  font-size: 28px;
+  line-height: 0px;
 }
-.subtitle{
-    font-family: 'Stint Ultra Condensed', cursive;
-    font-size: 20px;
-    line-height: 0px;
-}
-
-span{
-    display: inline-block;
-    padding: 3px;
-    font-size: 18px;
+.subtitle {
+  font-family: "Stint Ultra Condensed", cursive;
+  font-size: 20px;
+  line-height: 0px;
 }
 
-.mdc-top-app-bar__row{
-    background-color:#FF6B6C;
+span {
+  display: inline-block;
+  padding: 3px;
+  font-size: 18px;
 }
 
-.mdc-drawer{
-    background-color: #FF6B6C;
-    color: white;
+.mdc-top-app-bar__row {
+  background-color: #ff6b6c;
 }
 
-.mdc-list-item__text{
-    font-family: 'Lato', sans-serif;
-    line-height: 18px;
-    margin-left: 5px;
+.mdc-drawer {
+  background-color: #ff6b6c;
+  color: white;
 }
 
-.mdc-list-item{
-    margin:10px;
+.mdc-list-item__text {
+  font-family: "Lato", sans-serif;
+  line-height: 18px;
+  margin-left: 5px;
+}
+
+.mdc-list-item {
+  margin: 10px;
+}
+
+main {
+  padding: 10px;
 }
