@@ -6,9 +6,9 @@
     <meta name="description" content="???" />
     <meta name="keywords" content="motivation, self-improvement, muslim" />
     <meta name="author" content="Omar Dajani/Leena Elzeiny" />
-    <title>Document</title>
+    <title>Bunyaan</title>
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -16,63 +16,66 @@
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <!-- Personal Scripts/Styles -->
-    <script type="module" src="main_page.js"></script>
-    <link rel="stylesheet" type="text/css" href="main_page.css"/>
+    <script type="module" src="/static/main_page.js"></script>
+    <script type="module" src="/static/menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/main_page.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/universal.css"/>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
+    <aside class="mdc-drawer mdc-drawer--modal">
+    <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title title">Khadija Halal</h3>
+        <h6 class="mdc-drawer__subtitle subtitle">App Streak: 322</h6>
+        </div>
+    <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+        <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page" tabindex="0">
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+            <span class="mdc-list-item__text">Home</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">plumbing</i>
+            <span class="mdc-list-item__text">Plans</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">announcement</i>
+            <span class="mdc-list-item__text">Feed</span>
+        </a>
+        <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true">trending_up</i>
+            <span class="mdc-list-item__text">Your Stats</span>
+        </a>
+        </nav>
+    </div>
+    </aside>
+      <div class="mdc-drawer-scrim"></div>
+      <div class="mdc-drawer-app-content">
     <header class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
-            <span class="mdc-top-app-bar__title">Page title</span>
+            <span class="mdc-top-app-bar__title" style="font-family: Stint Ultra Condensed;font-size: 30px;"><span class="material-icons">
+                dashboard
+                </span>Bunyaan</span>
           </section>
           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
             <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
-            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
           </section>
         </div>
       </header>
       <main class="mdc-top-app-bar--fixed-adjust">
-        <div class="badges">
+        <div class="badges" >
             <i class="fa fa-shield" aria-hidden="true"></i>
-            <span class="badge-count">37</span>
-            <span class="caption">Badges</span>
-        </div>
-        <div class="todo-box">
-            <div class="todo-heading">
-                <div class="left">
-                    <p class="program-goal">Consistently Five</p>
-                    <p class="category">Prayer</p>
-                </div>
-                <div class="right">
-                    <span class="material-icons">
-                        local_fire_department
-                        </span>
-                    <span class="streak">47</p>
-                </div>
-            </div>
-            <div class="todo-tasks">
-            <div class="mdc-touch-target-wrapper">
-                <div class="mdc-checkbox mdc-checkbox--touch">
-                  <input type="checkbox"
-                         class="mdc-checkbox__native-control"
-                         id="checkbox-1"/>
-                  <div class="mdc-checkbox__background">
-                    <svg class="mdc-checkbox__checkmark"
-                         viewBox="0 0 24 24">
-                      <path class="mdc-checkbox__checkmark-path"
-                            fill="none"
-                            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                    </svg>
-                    <div class="mdc-checkbox__mixedmark"></div>
-                  </div>
-                  <div class="mdc-checkbox__ripple"></div>
-                </div>
-              </div>
-              <span>Fajr</span>
-            </div>
+            <span class="badge-count subtitle">37</span>
+            <span class="subtitle">Badges</span>
         </div>
       </main>
+    </div>
   </body>
 </html>
