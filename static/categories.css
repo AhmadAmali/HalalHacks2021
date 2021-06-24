@@ -14,3 +14,11 @@
     bottom: 36px;
     right: 18px;
 }
+
+.sheet{
+    width: 100vw;
+    position: fixed;
+    border-radius: 36px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    height: 50%;
+}

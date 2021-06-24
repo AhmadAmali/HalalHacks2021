@@ -17,6 +17,7 @@
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <!-- Personal Scripts/Styles -->
     <script type="module" src="/static/menu.js"></script>
+    <script type="module" src="/static/categories.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/categories.css"/>
     <link rel="stylesheet" type="text/css" href="/static/universal.css"/>
     <!-- JQuery -->
@@ -51,6 +52,9 @@
             <span class="mdc-list-item__text">Your Stats</span>
         </a>
         </nav>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <span class="material-icons nav-quote"> dashboard</span>
+        <p class="nav-quote">The Prophet (ﷺ) said, "A faithful believer to a faithful believer is like the bricks of a wall, enforcing each other." [Al-Bukhari:481]</p>
     </div>
     </aside>
       <div class="mdc-drawer-scrim"></div>
@@ -74,8 +78,8 @@
         <div class="category title">Duaa</div>
         <div class="category title">Mental Health</div>
         <div class="category title">Quran</div>
-        <div class="category title">Charity</div>
         <div class="category title">Personality</div>
+        <div class="category title">Physical Health</div>
         <div class="category title">Prayers</div>
         <div class="category title">Social Impact</div>
         <button class="mdc-fab" aria-label="Edit">
@@ -83,7 +87,58 @@
             <span class="mdc-fab__icon material-icons">edit</span>
           </button>
           <br /><br /> <br /><br />
+          
       </main>
+      
     </div>
+    <div class="mdc-dialog">
+        <div class="mdc-dialog__container">
+          <div class="mdc-dialog__surface"
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="Build a Plan"
+            aria-describedby="my-dialog-content">
+            <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+            <h2 class="mdc-dialog__title" id="build-plan"><!--
+           -->Build a Plan<!--
+         --></h2>
+            <div class="mdc-dialog__content" id="my-dialog-content">
+                <div class="text-input">
+                    <span class="material-icons">
+                        emoji_events
+                    </span>
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <span class="mdc-floating-label" id="goal-hint">Goal</span>
+                        <input class="mdc-text-field__input" type="text" aria-labelledby="goal-content" maxlength="100">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line">
+                        <div class="mdc-text-field-character-counter">0 / 100</div>
+                      </div>
+                </div>
+                <div class="text-input">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                    <label class="mdc-text-field mdc-text-field--filled">
+                        <span class="mdc-text-field__ripple"></span>
+                        <span class="mdc-floating-label" id="motto-hint">Motto (optional)</span>
+                        <input class="mdc-text-field__input" type="text" aria-labelledby="motto-content">
+                        <span class="mdc-line-ripple"></span>
+                    </label>
+                    <div class="mdc-text-field-helper-line" style="font-size: 12px;">
+                        An ayah/hadith that keeps you going
+                      </div>
+                </div>
+            </div>
+            <div class="mdc-dialog__actions">
+                <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="continue">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Start Building</span>
+                </button>
+              </div>
+          </div>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+      </div>
   </body>
 </html>
