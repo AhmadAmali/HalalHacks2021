@@ -1,0 +1,30 @@
+.mdc-card{
+    margin: 10px;
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    background-color: #FFE45C;
+}
+
+.plan-icons{
+    height: 24px;
+}
+
+.plan-icons span{
+    font-size: 16px;
+}
+
+.task-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.chip{
+    background-color: pink;
+    border-radius: 15px;
+    padding: 0px 5px;
+    margin: 5px;
+    white-space: nowrap;
+}
