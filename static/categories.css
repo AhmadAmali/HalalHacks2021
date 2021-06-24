@@ -1,0 +1,16 @@
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+    color: white;
+    background-color: #102542;
+}
+
+.mdc-fab{
+    background-color: #8963BA;
+    position: fixed;
+    bottom: 36px;
+    right: 18px;
+}
