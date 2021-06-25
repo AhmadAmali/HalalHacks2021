@@ -1,7 +1,21 @@
 .title {
-  color: blue;
+  color: #8963ba;
+  font-size: large;
 }
 
 p {
-  color: gold;
+  color: #06767b;
+  font-size: 50px;
+}
+
+.info {
+  color: #06767b;
+}
+
+.mdc-tab {
+  color: #06767b;
+}
+
+.mdc-card {
+  padding: 40px;
 }
