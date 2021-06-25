@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let post= {
 	0:{
 		title:"Bunyaan",
@@ -59,3 +60,6 @@ $(document).ready(function(){
 	  </div>`)
 	}
 })
+=======
+const tabBar = mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+>>>>>>> 249524d2146495d32244a29ab9199d1168fc0023

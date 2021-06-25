@@ -15,7 +15,7 @@
     margin: 10px;
     width: 90%;
     padding: 5px;
-    background-color: #90F1EF;
+    background-color: #A4F4F2;
 }
 
 .todo-heading{
@@ -40,4 +40,12 @@
 .right{
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 25px;
+    height: 32px;
+    padding: 2px
+}
+
+.right span{
+    color: #ff6b6c;
 }

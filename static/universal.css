@@ -23,6 +23,10 @@ span {
   font-size: 18px;
 }
 
+.nav-quote{
+    padding:10px;
+}
+
 .mdc-top-app-bar__row {
   background-color: #ff6b6c;
 }
