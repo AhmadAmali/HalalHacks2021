@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="main page of Bunyaan" />
+    <meta name="keywords" content="motivation, self-improvement, muslim" />
+    <meta name="author" content="Omar Dajani/Leena Elzeiny" />
+    <title>Bunyaan</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Stint+Ultra+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Material UI -->
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- Personal Scripts/Styles -->
+    <script type="module" src="/static/new_plan.js"></script>
+    <script type="module" src="/static/menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/new_plan.css" />
+    <link rel="stylesheet" type="text/css" href="/static/universal.css" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <aside class="mdc-drawer mdc-drawer--modal">
+      <div class="mdc-drawer__header">
+        <h3 class="mdc-drawer__title title">Khadija Halal</h3>
+        <h6 class="mdc-drawer__subtitle subtitle">App Streak: 322</h6>
+      </div>
+      <div class="mdc-drawer__content">
+        <nav class="mdc-list">
+          <a
+            class="mdc-list-item mdc-list-item--activated"
+            href="#"
+            aria-current="page"
+            tabindex="0"
+          >
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true"
+              >home</i
+            >
+            <span class="mdc-list-item__text">Home</span>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true"
+              >plumbing</i
+            >
+            <span class="mdc-list-item__text">Plans</span>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true"
+              >announcement</i
+            >
+            <span class="mdc-list-item__text">Feed</span>
+          </a>
+          <a class="mdc-list-item" href="#">
+            <span class="mdc-list-item__ripple"></span>
+            <i class="material-icons mdc-list-item__graphic" aria-hidden="true"
+              >trending_up</i
+            >
+            <span class="mdc-list-item__text">Your Stats</span>
+          </a>
+        </nav>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <span class="material-icons nav-quote"> dashboard</span>
+        <p class="nav-quote">The Prophet (ﷺ) said, "A faithful believer to a faithful believer is like the bricks of a wall, enforcing each other." [Al-Bukhari:481]</p>
+    </div>
+    </aside>
+    <div class="mdc-drawer-scrim"></div>
+    <div class="mdc-drawer-app-content">
+      <header class="mdc-top-app-bar">
+        <div class="mdc-top-app-bar__row">
+          <section
+            class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+          >
+            <button
+              class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+              aria-label="Open navigation menu"
+            >
+              menu
+            </button>
+            <span
+              class="mdc-top-app-bar__title"
+              style="font-family: Stint Ultra Condensed; font-size: 30px"
+              ><span class="material-icons"> dashboard </span>Bunyaan</span
+            >
+          </section>
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">add</button>
+          </section>
+        </div>
+      </header>
+      <main class="mdc-top-app-bar--fixed-adjust">
+        <h1 class="title">Be There For Parents</h1>
+        <p class="motto">
+          "Thy Lord hath decreed that ye worship none but Him, and that ye be kind to parents. Whether one or both of them attain old age in thy life, say not to them a word of contempt, nor repel them, but address them in terms of honor. And out of kindness, lower to them the wing of humility, and say: ‘My Lord! bestow on them Thy Mercy even as they cherished me in childhood' "(17:23-24).
+        </p>
+        <div class="day-container">
+            <hr />
+            <h1 class="title">Day A</h1>
+            <div class="text-input">
+                <span class="material-icons">
+                    date_range
+                </span>
+                <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <span class="mdc-floating-label" id="goal-hint">Length</span>
+                    <input class="mdc-text-field__input" type="text" aria-labelledby="len-content" maxlength="100">
+                    <span class="mdc-line-ripple"></span>
+                </label>
+                <div class="mdc-text-field-helper-line">
+                    How many times to repeat
+                </div>
+            </div>
+            <div class="text-input">
+                <span class="material-icons">
+                    done_all
+                </span>
+                <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <span class="mdc-floating-label" id="task-hint">Tasks</span>
+                    <input class="mdc-text-field__input" type="text" aria-labelledby="goal-content" maxlength="100">
+                    <span class="mdc-line-ripple"></span>
+                </label>
+                <div class="mdc-text-field-helper-line">
+                    Separate by commas (i.e. "Fajr, Duhr, ...")
+                </div>
+            </div>
+        </div>
+          <button class="mdc-fab" aria-label="Edit">
+            <div class="mdc-fab__ripple"></div>
+            <span class="mdc-fab__icon material-icons">check</span>
+          </button>
+          <button class="mdc-button mdc-button--outlined" style="border-color:#FF6B6C">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Add Day</span>
+          </button>
+      </main>
+    </div>
+  </body>
+</html>
