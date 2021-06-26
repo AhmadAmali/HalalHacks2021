@@ -1,0 +1,36 @@
+
+.mdc-fab{
+    background-color: #8963BA;
+    position: fixed;
+    bottom: 36px;
+    right: 18px;
+}
+
+.mdc-text-field--focused{
+    color: #FF6B6C;
+}
+
+.day-container .material-icons{
+    color: #FF6B6C;
+}
+
+.text-input{
+    margin: 10px;
+}
+
+h1, p, .mdc-text-field-helper-line {
+    color: white;
+}
+
+body{
+    --mdc-theme-primary: #FF6B6C;
+    background-color: #102542;
+}
+
+hr{
+    margin: 10px;
+}
+
+.day-container{
+    margin: 40px 10px;
+}

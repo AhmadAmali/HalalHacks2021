@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="page to explore new plans and communities"
-    />
+    <meta name="description" content="main page of Bunyaan" />
     <meta name="keywords" content="motivation, self-improvement, muslim" />
     <meta name="author" content="Omar Dajani/Leena Elzeiny" />
     <title>Bunyaan</title>
@@ -31,9 +28,9 @@
     />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <!-- Personal Scripts/Styles -->
-    <script type="module" src="/static/explore_plans.js"></script>
+    <script type="module" src="/static/new_plan.js"></script>
     <script type="module" src="/static/menu.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/explore_plans.css" />
+    <link rel="stylesheet" type="text/css" href="/static/new_plan.css" />
     <link rel="stylesheet" type="text/css" href="/static/universal.css" />
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -105,21 +102,55 @@
             >
           </section>
           <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Add">add</button>
+            <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">add</button>
           </section>
         </div>
       </header>
       <main class="mdc-top-app-bar--fixed-adjust">
-        <p class="title">Current Plans</p>
-        <div id="current"></div>
-        <br />
-        <p class="title">Recommended Plans</p>
-        <div id="recommended"></div>
-        <button class="mdc-fab" aria-label="Search">
-          <div class="mdc-fab__ripple"></div>
-          <span class="mdc-fab__icon material-icons">search</span>
-        </button>
-        <br /><br /> <br /><br />
+        <h1 class="title">Be There For Parents</h1>
+        <p class="motto">
+          "Thy Lord hath decreed that ye worship none but Him, and that ye be kind to parents. Whether one or both of them attain old age in thy life, say not to them a word of contempt, nor repel them, but address them in terms of honor. And out of kindness, lower to them the wing of humility, and say: ‘My Lord! bestow on them Thy Mercy even as they cherished me in childhood' "(17:23-24).
+        </p>
+        <div class="day-container">
+            <hr />
+            <h1 class="title">Day A</h1>
+            <div class="text-input">
+                <span class="material-icons">
+                    date_range
+                </span>
+                <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <span class="mdc-floating-label" id="goal-hint">Length</span>
+                    <input class="mdc-text-field__input" type="text" aria-labelledby="len-content" maxlength="100">
+                    <span class="mdc-line-ripple"></span>
+                </label>
+                <div class="mdc-text-field-helper-line">
+                    Enter oo to repeat to infinity
+                </div>
+            </div>
+            <div class="text-input">
+                <span class="material-icons">
+                    done_all
+                </span>
+                <label class="mdc-text-field mdc-text-field--filled">
+                    <span class="mdc-text-field__ripple"></span>
+                    <span class="mdc-floating-label" id="task-hint">Tasks</span>
+                    <input class="mdc-text-field__input" type="text" aria-labelledby="goal-content" maxlength="100">
+                    <span class="mdc-line-ripple"></span>
+                </label>
+                <div class="mdc-text-field-helper-line">
+                    Separate by commas (i.e. "Fajr, Duhr, ...")
+                </div>
+            </div>
+        </div>
+          <button class="mdc-fab" aria-label="Edit">
+            <div class="mdc-fab__ripple"></div>
+            <span class="mdc-fab__icon material-icons">check</span>
+          </button>
+          <button class="mdc-button mdc-button--outlined" style="border-color:#FF6B6C">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__label">Add Day</span>
+          </button>
       </main>
     </div>
   </body>

@@ -2,11 +2,22 @@
     margin: 10px;
 }
 
+.mdc-card__actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mdc-fab{
+    background-color: #8963BA;
+    position: fixed;
+    bottom: 36px;
+    right: 18px;
+}
+
 .card-content{
     display: flex;
     justify-content: space-between;
     padding:10px;
-    background-color: #FFE45C;
 }
 
 .plan-icons{
@@ -20,11 +31,16 @@
 .task-list{
     display: flex;
     flex-wrap: wrap;
+    padding: 5px
 }
 .chip{
-    background-color: pink;
+    background-color: #ff6b6c;
+    color: white;
     border-radius: 15px;
     padding: 0px 5px;
     margin: 5px;
     white-space: nowrap;
+}
+.chip span{
+    font-size: 14px;
 }

@@ -1,0 +1,28 @@
+.category{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+    color: white;
+    background-color: #102542;
+}
+
+.mdc-fab{
+    background-color: #8963BA;
+    position: fixed;
+    bottom: 36px;
+    right: 18px;
+}
+
+.sheet{
+    width: 100vw;
+    position: fixed;
+    border-radius: 36px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    height: 50%;
+}
+
+.mdc-chip__text{
+    font-size: 12px;
+}
