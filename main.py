@@ -1,6 +1,8 @@
 from pprint import pprint as pp
-from flask import Flask, flash, redirect, render_template, request, url_for, current_app
+from flask import Flask, flash, redirect, render_template, request, url_for, current_app, Blueprint
 from plans import plans
+#from .extensions import mongo
+main = Blueprint('main', __name__)
 
 app = Flask(__name__)
 app.register_blueprint(plans, url_prefix="/plans")
