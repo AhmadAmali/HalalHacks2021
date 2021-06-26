@@ -1,5 +1,10 @@
 const dialog = mdc.dialog.MDCDialog.attachTo(document.querySelector('.mdc-dialog'));
-const textField = mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
+const chipSetEl = document.querySelector('.mdc-chip-set');
+const chipSet = mdc.chipSet.MDCChipSet.attachTo(chipSetEl);
+const textField = [].map.call(document.querySelectorAll('.mdc-text-field'), function(el) {
+  mdc.textField.MDCTextField.attachTo(el);
+});
+
 const contentElement = document.querySelector('.mdc-drawer-app-content');
 dialog.listen('MDCDialog:opened', function() {
     // Assuming contentElement references a common parent element with the rest of the page's content

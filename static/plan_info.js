@@ -40,7 +40,7 @@ $(document).ready(function(){
 	for(let p in post) {
 		$(".feed-container").append(`<div class="mdc-card">
 		<h1 class="title">${post[p]['title']}</h1>
-		<p class="subtitle">
+		<p class="post-content">
 		  ${post[p]['post_content']}
 		</p>
 		<div class="mdc-card__actions">
