@@ -28,6 +28,8 @@ let todo_data = {
 let rec_data = {
     "Wear Hijab":{
         goal: "Wear Hijab",
+        id: 111000,
+        motto: "Modesty is a branch of faith",
         subscribers: "17K",
         length: "180 days",
         category: "Physical",
@@ -35,18 +37,31 @@ let rec_data = {
     },
     "Random Kindness":{
         goal: "Random Kindness",
+        id: 111001,
+        motto: "Shall I not tell you for whom the Hellfire is forbidden? It is every person accessible, polite, and mild.",
         subscribers: "61K",
         length: "10 days",
         category: "Social Impact",
         tasks: ["Smile", "Compliment someone", "Call family", "Make dad food"]
     },
-    "Be organized":{
+    "Be Organized":{
         goal: "Be organized",
+        id: 111002,
+        motto: "Purity is half of iman (faith)",
         subscribers: "61K",
         length: "10 days",
         category: "Personality",
         tasks: ["Use planner", "Don't miss a meeting"]
     },
+    "Get Running":{
+        goal: "Get Running",
+        id: 111003,
+        motto: "A strong believer is better and dearer to Allah than a weak one, and both are good.",
+        subscribers: "732",
+        length: "100 days",
+        category: "Physical Health",
+        tasks: ["5 200m sprints", "100m/200m/300m, 3 cycles", "1 mile", "2.5 miles"]
+    }
 }
 
 mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-fab'));
