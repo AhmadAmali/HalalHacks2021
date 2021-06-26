@@ -1,12 +1,14 @@
-.mdc-tab-scroller__scroll-area--scroll{
-    overflow: hidden; /* Hide scrollbars */
+.mdc-tab-scroller__scroll-area--scroll {
+  overflow: hidden; /* Hide scrollbars */
 }
 
-.mdc-tab-scroller, .mdc-tab-scroller__scroll-area, .mdc-tab-scroller__scroll-content{
-    height: 50px;
+.mdc-tab-scroller,
+.mdc-tab-scroller__scroll-area,
+.mdc-tab-scroller__scroll-content {
+  height: 50px;
 }
 
-body{
+body {
   --mdc-theme-primary: #8963ba;
 }
 
@@ -19,11 +21,9 @@ body{
   margin: 10px;
 }
 
-
 .title {
   color: #8963ba;
   font-size: large;
-
 }
 .post-content {
   line-height: 20px;
@@ -37,3 +37,20 @@ body{
 .feed-container, .info-container{
     background-color: #06767b;
 } */
+
+.cardheader {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  color: #8963ba;
+}
+
+.likes,
+.comments {
+  color: #8963ba;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}

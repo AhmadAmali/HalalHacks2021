@@ -1,5 +1,3 @@
-const tabBar = mdc.tabBar.MDCTabBar.attachTo(document.querySelector('.mdc-tab-bar'));
-
 let post= {
 	0:{
 		title:"Bunyaan",
@@ -17,33 +15,19 @@ let post= {
 	},
 	2:{
 		title:"Reading Quran daily",
-		author:"Nawfal Dajani",
+		author:"Nawfal",
 		num_comments: 53,
 		num_likes: 104,
 		post_content:"Anyone know any ways to stay commited to reading the Quran each day? I feel embarrassed I have to ask this.."
 	}
 }
-
-$(".mdc-top-app-bar--fixed-adjust").on("MDCTabBar:activated", function(event){
-    if(event.detail.index == 0){
-        $(".info-container").hide();
-        $(".feed-container").show();
-    }
-    else{
-        $(".feed-container").hide();
-        $(".info-container").show();
-    }
-});
-
 $(document).ready(function(){
-    $(".info-container").hide();
 	for(let p in post) {
-		$(".feed-container").append(`<div class="mdc-card">
-		<div class="cardheader"> <span class="title">${post[p]['title']}</span><span class="author">by ${post[p]['author']}</span></div>
-		<p class="post-content">
+		$(".container").append(`<div class="mdc-card">
+		<h1 class="title">${post[p]['title']}</h1>
+		<p class="subtitle">
 		  ${post[p]['post_content']}
 		</p>
-		
 		<div class="mdc-card__actions">
 		  <button
 			class="mdc-icon-button mdc-card__action mdc-card__action--icon"
@@ -58,14 +42,23 @@ $(document).ready(function(){
 			<i class="material-icons mdc-icon-button__icon"
 			  >favorite_border</i
 			>
-		  </button><span class="likes">${post[p]['num_likes']}</span>
+		  </button>
 		  <button
 			class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
 			title="Share"
 		  >
-			chat
-		  </button><span class="comments">${post[p]['num_comments']}</span> 
+			share
+		  </button>
+		  <button
+			class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon"
+			title="More options"
+		  >
+			more_vert
+		  </button>
 		</div>
 	  </div>`)
 	}
 })
+=======
+const tabBar = mdc.tabBar.MDCTabBar(document.querySelector('.mdc-tab-bar'));
+>>>>>>> 249524d2146495d32244a29ab9199d1168fc0023
