@@ -1,6 +1,6 @@
 const dialog = mdc.dialog.MDCDialog.attachTo(document.querySelector('.mdc-dialog'));
 const chipSetEl = document.querySelector('.mdc-chip-set');
-const chipSet = mdc.chipSet.MDCChipSet.attachTo(chipSetEl);
+// const chipSet = mdc.chipSet.MDCChipSet.attachTo(chipSetEl);
 const textField = [].map.call(document.querySelectorAll('.mdc-text-field'), function(el) {
   mdc.textField.MDCTextField.attachTo(el);
 });
@@ -17,3 +17,7 @@ dialog.listen('MDCDialog:opened', function() {
 $(".mdc-fab").click(()=>{
     dialog.open();
 });
+
+$(".mdc-dialog__button").click(()=>{
+  window.location.href = "./new_plan"
+})

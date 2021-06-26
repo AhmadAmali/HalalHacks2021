@@ -5,7 +5,7 @@ const textField = [].map.call(document.querySelectorAll('.mdc-text-field'), func
 });
 
 $(".mdc-fab").click(()=>{
-    console.log("TODO");
+    window.location.href = "./explore_plans";
 });
 
 let day_count = 1;

@@ -6,10 +6,14 @@ listEl.click(() => {
 });
 
 document.body.addEventListener('MDCDrawer:closed', () => {
-  mainContentEl.querySelector('input, button').focus();
+  
 });
 
 const menu = $(".mdc-top-app-bar__navigation-icon");
 menu.click(() =>{
     drawer.open = true;
+});
+
+$(".mdc-top-app-bar__section--align-end").click(() => {
+  window.location.href = "./categories"
 });

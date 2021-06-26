@@ -58,6 +58,10 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
 $(".favorite").click((event)=>{
     console.log(event);
     $(".favorite").text = "star";
+});
+
+$(".mdc-fab").click(()=>{
+    window.location.href = "./categories"
 })
 
 $(document).ready(function(){
