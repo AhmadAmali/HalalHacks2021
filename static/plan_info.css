@@ -1,0 +1,3 @@
+.mdc-tab-scroller__scroll-area--scroll{
+    overflow: hidden; /* Hide scrollbars */
+}
