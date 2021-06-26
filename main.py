@@ -1,7 +1,10 @@
 from pprint import pprint as pp
 from flask import Flask, flash, redirect, render_template, request, url_for, current_app
-#from stocks import query_api
+from plans import plans
+
 app = Flask(__name__)
+app.register_blueprint(plans, url_prefix="/plans")
+
 @app.route('/')
 
 def index():
