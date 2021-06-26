@@ -1,3 +1,29 @@
 .mdc-tab-scroller__scroll-area--scroll{
     overflow: hidden; /* Hide scrollbars */
 }
+
+.mdc-tab-scroller, .mdc-tab-scroller__scroll-area, .mdc-tab-scroller__scroll-content{
+    height: 50px;
+}
+
+.title {
+  color: #8963ba;
+  font-size: large;
+
+}
+
+p {
+  color: #06767b;
+}
+
+.motto {
+  color: #06767b;
+}
+
+.mdc-tab {
+  color: #06767b;
+}
+
+.mdc-card {
+  padding: 40px;
+}
