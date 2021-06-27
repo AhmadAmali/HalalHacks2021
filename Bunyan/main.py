@@ -13,13 +13,27 @@ main = Blueprint('main', __name__,
 
 def index():
 	return render_template('main_page.html')
+
+@main.route('/explore_plans')
+def render_plans():
+	return render_template('explore_plans.html')
+	
+@main.route('/stats')
+def render_stats():
+	return render_template('stats.html')
+
+@main.route('/categories')
+def categories():
+	return render_template('categories.html')
+
+
 	
 
 @main.route('/testdb')
 
 def addTask():
 	task_collection = mongo.db.tasks
-	task_collection.insert({'taskName' : 'pray 5 times a day'})
+	task_collection.insert({'taskName' : 'pray 5 times a day', 'taskLength' : '30 days'})
 	return '<h1>Added a task!</h1>'
 
 

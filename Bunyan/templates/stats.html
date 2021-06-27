@@ -28,9 +28,9 @@
     />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <!-- Personal Scripts/Styles -->
-    <script type="module" src="main_page.js"></script>
+    <script type="module" src="stats.js"></script>
     <script type="module" src="menu.js"></script>
-    <link rel="stylesheet" type="text/css" href="main_page.css" />
+    <link rel="stylesheet" type="text/css" href="stats.css" />
     <link rel="stylesheet" type="text/css" href="universal.css" />
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,7 +44,7 @@
       <div class="mdc-drawer__content">
         <nav class="mdc-list">
           <a
-            class="mdc-list-item mdc-list-item--activated"
+            class="mdc-list-item"
             href="./"
             aria-current="page"
             tabindex="0"
@@ -69,7 +69,7 @@
             >
             <span class="mdc-list-item__text">Feed</span>
           </a>
-          <a class="mdc-list-item" href="./stats">
+          <a class="mdc-list-item mdc-list-item--activated" href="./stats">
             <span class="mdc-list-item__ripple"></span>
             <i class="material-icons mdc-list-item__graphic" aria-hidden="true"
               >trending_up</i
@@ -107,11 +107,54 @@
         </div>
       </header>
       <main class="mdc-top-app-bar--fixed-adjust">
-        <div class="badges">
-          <i class="fa fa-shield" aria-hidden="true"></i>
-          <span class="badge-count subtitle">37</span>
-          <span class="subtitle">Badges</span>
+        <span class="profile">Khadija Halal</span>
+        <div class="stats">
+            <div class="row">
+                <div class="quick-stat">
+                    <span class="material-icons">today</span>
+                    <div>
+                        <span class="title">377</span>
+                        <span class="stat-info">Days on App</span>
+                    </div>
+                </div>
+                <div class="quick-stat">
+                    <span class="material-icons">local_fire_department</span>
+                    <div>
+                        <span class="title">200</span>
+                        <span class="stat-info">Longest Streak</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="quick-stat">
+                    <span class="material-icons">done_all</span>
+                    <div>
+                        <span class="title">711</span>
+                        <span class="stat-info">Tasks Completed</span>
+                    </div>
+                </div>
+                <div class="quick-stat">
+                    <span class="material-icons">edit_note</span>
+                    <div>
+                        <span class="title">2</span>
+                        <span class="stat-info">Posts Written</span>
+                    </div>
+                </div
+            ></div>
         </div>
+        <br />
+        <span class="title" style="line-height: 32px; text-align:center;">••Task Activity••</span>
+        <img src="calendar.jpg" width="100%">
+        <br />
+        <span class="title" style="line-height: 32px; text-align:center;">••Badges••</span>
+        <span class="subtitle">Streak</span>
+        <img src="badge3.jpg" width="100%">
+        <br />
+        <span class="subtitle">Posts</span>
+        <img src="badge2.jpg" width="100%">
+        <br />
+        <span class="subtitle">Plans Completed</span>
+        <img src="badge1.jpg" width="100%">
       </main>
     </div>
   </body>
