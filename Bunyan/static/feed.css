@@ -1,0 +1,41 @@
+
+  .mdc-card {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .title {
+    color: #8963ba;
+    font-size: large;
+  }
+  .post-content {
+    line-height: 20px;
+  }
+  
+  .cardheader {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #8963ba;
+  }
+  
+  .likes,
+  .comments {
+    color: #8963ba;
+  }
+
+  .details{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px
+  }
+
+  .chip{
+    background-color: #ff6b6c;
+    color: white;
+    border-radius: 15px;
+    padding: 0px 5px;
+    margin: 5px;
+    white-space: nowrap;
+  }
+
