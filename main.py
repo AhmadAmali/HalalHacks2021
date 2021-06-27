@@ -9,7 +9,7 @@ app.register_blueprint(plans, url_prefix="/plans")
 
 @app.route('/')
 def index():
-	return current_app.send_static_file('main_page.html')
+	return render_template('main_page.html')
 
 @app.route('/categories')
 def categories():
