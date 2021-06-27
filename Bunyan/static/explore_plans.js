@@ -26,36 +26,36 @@ let todo_data = {
 }
 
 let rec_data = {
-    111000:{
+    "60d823fd743b9e5f7d6c341c":{
         goal: "Wear Hijab",
-        id: 111000,
+        id: "60d823fd743b9e5f7d6c341c",
         motto: "Modesty is a branch of faith",
         subscribers: "17K",
         length: "180 days",
         category: "Physical",
         tasks: ["Long pants", "Long sleeves", "Full attire", "No attire"]
     },
-    111001:{
+    "60d8243e743b9e5f7d6c3be6":{
         goal: "Random Kindness",
-        id: 111001,
+        id: "60d8243e743b9e5f7d6c3be6",
         motto: "Shall I not tell you for whom the Hellfire is forbidden? It is every person accessible, polite, and mild.",
         subscribers: "61K",
         length: "10 days",
         category: "Social Impact",
         tasks: ["Smile", "Compliment someone", "Call family", "Make dad food"]
     },
-    111002:{
+    "60d82468743b9e5f7d6c4247":{
         goal: "Be organized",
-        id: 111002,
+        id: "60d82468743b9e5f7d6c4247",
         motto: "Purity is half of iman (faith)",
         subscribers: "61K",
         length: "10 days",
         category: "Personality",
         tasks: ["Use planner", "Don't miss a meeting"]
     },
-    "Get Running":{
+    "60d82493743b9e5f7d6c47d1":{
         goal: "Get Running",
-        id: 111003,
+        id: "60d82493743b9e5f7d6c47d1",
         motto: "A strong believer is better and dearer to Allah than a weak one, and both are good.",
         subscribers: "732",
         length: "100 days",
@@ -71,13 +71,14 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
 });
 
 $(".favorite").click((event)=>{
-    console.log(event);
     $(".favorite").text = "star";
 });
 
 $(".mdc-fab").click(()=>{
     window.location.href = "./categories"
 })
+
+
 
 $(document).ready(function(){
     for(let d in todo_data){
@@ -125,7 +126,7 @@ $(document).ready(function(){
 
     for(let d in rec_data){
         let plan_card = $("<div class='mdc-card'></div>").html(
-            `<div class="card-content">
+            `<div class="card-content"  id="${rec_data[d].id}">
                 <div class="left">
                     <p class="title">${rec_data[d].goal}</p>
                     <p class="subtitle">${rec_data[d].category}</p>
@@ -171,4 +172,10 @@ $(document).ready(function(){
         //append todo to DOM
         $("#recommended").append(plan_card);
     }
+
+    $(".card-content").click((event)=>{
+        // the id of the specific plan
+        console.log(event.currentTarget.id);
+        window.location.href = "plan";
+    })
 });

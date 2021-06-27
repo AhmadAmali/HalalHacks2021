@@ -28,10 +28,10 @@
     />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <!-- Personal Scripts/Styles -->
-    <script type="module" src="/static/plan_info.js"></script>
-    <script type="module" src="/static/menu.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/plan_info.css" />
-    <link rel="stylesheet" type="text/css" href="/static/universal.css" />
+    <script type="module" src="plan_info.js"></script>
+    <script type="module" src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="plan_info.css" />
+    <link rel="stylesheet" type="text/css" href="universal.css" />
     <!-- JQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
@@ -121,7 +121,7 @@
         </div>
       </header>
       <main class="mdc-top-app-bar--fixed-adjust">
-        <h1 class="title">{{plan.title}}</h1>
+        <h1 class="title">{{plan.goal}}</h1>
         <p class="motto">{{plan.motto}}</p>
         <div class="mdc-tab-bar" role="tablist">
           <div class="mdc-tab-scroller">
@@ -175,16 +175,6 @@
         </div>
         <div class="feed-container"></div>
         <div class="info-container">
-          <div class="day">
-            <span class="title">Day A</span>
-            <div class="task">
-              <span class="material-icons"> task_alt </span>
-              <span>
-                Go for a quick walk around your neighborhood at any selected
-                time.
-              </span>
-            </div>
-          </div>
         </div>
       </main>
     </div>

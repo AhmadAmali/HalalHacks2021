@@ -22,7 +22,28 @@ let post= {
 		num_likes: 104,
 		post_content:"Anyone know any ways to stay commited to reading the Quran each day? I feel embarrassed I have to ask this.."
 	}
-}
+};
+
+let days=[{
+	"length": 1,
+	"tasks": ["Buy coffee for person in front of you", "Smile"]
+},
+{
+	"length": 1,
+	"tasks": ["Compliment someone", "Call family"]
+},
+{
+	"length": 1,
+	"tasks": ["Text someone who was a pivotal moment in your life"]
+},
+{
+	"length": 1,
+	"tasks": ["Donate to person in need"]
+},
+{
+	"length": 1,
+	"tasks": ["Make dad food"]
+}];
 
 $(".mdc-top-app-bar--fixed-adjust").on("MDCTabBar:activated", function(event){
     if(event.detail.index == 0){
@@ -67,5 +88,20 @@ $(document).ready(function(){
 		  </button><span class="comments">${post[p]['num_comments']}</span> 
 		</div>
 	  </div>`)
+	}
+
+	for(let d in days){
+		let dayEl = $("<div class='day'></div>").html(`
+			<span class="title">Day ${String.fromCharCode(Number(d) + 65)}</span>`
+		)
+		for(let t in days[d].tasks){
+			let taskEl = $("<div class='task'></div>").html(`
+				<span class="material-icons"> task_alt </span>
+				<span>
+				  ${days[d].tasks[t]}
+				</span>`);
+			dayEl.append(taskEl);
+		}
+		$(".info-container").append(dayEl);
 	}
 })

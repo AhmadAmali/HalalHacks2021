@@ -30,6 +30,40 @@ def categories():
 def feed():
 	return render_template('feed.html')
 
+@main.route('/plan')
+def plan_info():
+	# query real info using id into plan_data
+	plan_data = {
+        "goal": "Random Kindness",
+        "id": 111001,
+        "motto": "Shall I not tell you for whom the Hellfire is forbidden? It is every person accessible, polite, and mild.",
+        "subscribers": "61K",
+        "length": "5 days",
+        "category": "Social Impact",
+        "task_summary": ["Smile", "Compliment someone", "Call family", "Make dad food"],
+        "days":[{
+            "length": 1,
+            "tasks": ["Buy coffee for person in front of you", "Smile"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Compliment someone", "Call family"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Text someone who was a pivotal moment in your life"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Donate to person in need"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Make dad food"]
+        }]
+    }
+	return render_template('plan_info.html', plan=plan_data)
+
 
 	
 
