@@ -3,6 +3,7 @@ const buttonRipple = mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-
 const textField = [].map.call(document.querySelectorAll('.mdc-text-field'), function(el) {
     mdc.textField.MDCTextField.attachTo(el);
 });
+let textEl = [];
 
 $(".mdc-fab").click(()=>{
     window.location.href = "./explore_plans";
@@ -42,5 +43,8 @@ $(".mdc-button").click(()=>{
         <div class="mdc-text-field-helper-line">
             Separate by commas (i.e. "Fajr, Duhr, ...")
         </div>
-    </div></div>`)
+    </div></div>`);
+    textEl = document.querySelectorAll('.mdc-text-field');
+    mdc.textField.MDCTextField.attachTo(textEl[textEl.length - 1]);
+    mdc.textField.MDCTextField.attachTo(textEl[textEl.length - 2]);
 });

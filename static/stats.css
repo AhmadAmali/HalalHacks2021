@@ -1,0 +1,41 @@
+.profile{
+    width: 100%;
+    text-align: center;
+    font-family: "Stint Ultra Condensed", cursive;
+    font-size: 48px;
+}
+
+.quick-stat{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 40px;
+    border: 1px #FF6B6C solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.title{
+    line-height: 28px;
+    width: 100%;
+}
+
+.subtitle{
+    margin-top: 30px;
+}
+
+
+.stat-info{
+    font-size: 14px;
+}
+
+.stats, .row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row{
+    flex-direction: column;
+    align-items: center;
+}
