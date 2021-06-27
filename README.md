@@ -1,5 +1,7 @@
 # HalalHacks2021
 
+![bunyaanlogo](https://user-images.githubusercontent.com/78248069/123534484-5441b280-d6d2-11eb-8e9d-15cde2fcfede.png)
+
 Steps to install and run flask in Linux (dev):
 
 firstly cd in your git respository.

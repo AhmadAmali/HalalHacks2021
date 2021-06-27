@@ -26,7 +26,7 @@ let todo_data = {
 }
 
 let rec_data = {
-    "Wear Hijab":{
+    111000:{
         goal: "Wear Hijab",
         id: 111000,
         motto: "Modesty is a branch of faith",
@@ -35,7 +35,7 @@ let rec_data = {
         category: "Physical",
         tasks: ["Long pants", "Long sleeves", "Full attire", "No attire"]
     },
-    "Random Kindness":{
+    111001:{
         goal: "Random Kindness",
         id: 111001,
         motto: "Shall I not tell you for whom the Hellfire is forbidden? It is every person accessible, polite, and mild.",
@@ -44,7 +44,7 @@ let rec_data = {
         category: "Social Impact",
         tasks: ["Smile", "Compliment someone", "Call family", "Make dad food"]
     },
-    "Be Organized":{
+    111002:{
         goal: "Be organized",
         id: 111002,
         motto: "Purity is half of iman (faith)",
