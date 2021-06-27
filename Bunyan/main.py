@@ -29,9 +29,9 @@ def categories():
 @main.route('/new_plan')
 def new_plan():
 	return render_template('new_plan.html')
-
-
-	
+@main.route('/feed')
+def feed():
+	return render_template('feed.html')
 
 @main.route('/testdb')
 

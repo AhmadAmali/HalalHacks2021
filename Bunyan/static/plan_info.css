@@ -40,7 +40,7 @@ body {
 
 .cardheader {
   display: flex;
-  width: 50%;
+  width: 100%;
   align-items: center;
   color: #8963ba;
 }

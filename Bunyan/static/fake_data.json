@@ -1,0 +1,110 @@
+{
+    "111000":{
+        "goal": "Wear Hijab",
+        "id": 111000,
+        "motto": "Modesty is a branch of faith",
+        "subscribers": "17K",
+        "length": "180 days",
+        "category": "Physical",
+        "task_summary": ["Long pants", "Long sleeves", "Full attire", "No attire"],
+        "days": [{
+            "length": 45,
+            "tasks": ["No attire"]
+        },
+        {
+            "length": 45,
+            "tasks": ["Long pants"]
+        },
+        {
+            "length": 45,
+            "tasks": ["Long pants", "Long sleeves"]
+        },
+        {
+            "length": 45,
+            "tasks": ["Long pants", "Long sleeves", "Hijab"]
+        }]
+    },
+    "111001":{
+        "goal": "Random Kindness",
+        "id": 111001,
+        "motto": "Shall I not tell you for whom the Hellfire is forbidden? It is every person accessible, polite, and mild.",
+        "subscribers": "61K",
+        "length": "5 days",
+        "category": "Social Impact",
+        "task_summary": ["Smile", "Compliment someone", "Call family", "Make dad food"],
+        "days":[{
+            "length": 1,
+            "tasks": ["Buy coffee for person in front of you", "Smile"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Compliment someone", "Call family"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Text someone who was a pivotal moment in your life"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Donate to person in need"]
+        },
+        {
+            "length": 1,
+            "tasks": ["Make dad food"]
+        }]
+    },
+    "111002":{
+        "goal": "Be organized",
+        "id": 111002,
+        "motto": "Purity is half of iman (faith)",
+        "subscribers": "61K",
+        "length": "10 days",
+        "category": "Personality",
+        "tasks_summary": ["Use planner", "Don't miss a meeting"],
+        "days":[{
+            "length": 10,
+            "tasks": ["Use planner", "Don't miss a meeting"]
+        }]
+    },
+    "111003":{
+        "goal": "Get Running",
+        "id": 111003,
+        "motto": "A strong believer is better and dearer to Allah than a weak one, and both are good.",
+        "subscribers": "732",
+        "length": "100 days",
+        "category": "Physical Health",
+        "task_summary": ["5 200m sprints", "100m/200m/300m, 3 cycles", "1 mile", "2.5 miles"],
+        "days":[{
+            "length": 10,
+            "tasks": ["5 200m sprints", "Dynamic stretching"]
+        },
+        {
+            "length": 10,
+            "tasks": ["100m/200m/300m, 3 cycles", "Ab workout"]
+        },
+        {
+            "length": 10,
+            "tasks": ["1 mile"]
+        },
+        {
+            "length": 10,
+            "tasks": ["2.5 miles"]
+        },
+        {
+            "length": 10,
+            "tasks": ["5 miles"]
+        },
+        {
+            "length": 10,
+            "tasks": ["1 mile"]
+        },
+        {
+            "length": 10,
+            "tasks": ["2.5 miles"]
+        },
+        {
+            "length": 10,
+            "tasks": ["5 miles"]
+        }]   
+    }
+}
