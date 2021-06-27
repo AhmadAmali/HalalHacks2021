@@ -2,7 +2,7 @@ import json
 import os
 from flask import Flask, request, jsonify
 from flask_mongoengine import MongoEngine
-from dotenv import load_dotenv
+From dotenv import load_dotenv
 load_dotenv()
 
 
@@ -14,10 +14,10 @@ app = Flask(__name__)
 # }
 DB_URI = os.environ.get('DB_URI')
 db = MongoEngine()
-client = pymongo.MongoClient("mongodb+srv://halalAdmin:" + password + "@cluster0.mnwcg.mongodb.net/HalalDB?retryWrites=true&w=majority")
-#mongodb+srv://halalAdmin:@cluster0.mnwcg.mongodb.net/HalalDB?retryWrites=true&w=majority
+client = MongoEngine.MongoClient(DB_URI)
 db = client.test
 db.init_app(app)
+
 
 class User(db.Document):
     name = db.StringField()
@@ -25,17 +25,6 @@ class User(db.Document):
     def to_json(self):
         return {"name": self.name,
                 "email": self.email}
-
-class Plan(db.Document):
-    goal = db.StringField() 
-    id = db.IntField() 
-    motto = db.StringField() 
-    subscribers = db.StringField()  
-    length = db.StringField() 
-    category = db.StringField() 
-    tasks = db.ListField()
-
-Plan(goal = "Wear Hijab", id = 111000, motto = "Modesty is a branch of faith", subscribers = "17K", length = "180 days", category = "Physical", tasks = ["Long pants", "Long sleeves", "Full attire", "No attire"])
 
 @app.route('/', methods=['GET'])
 def query_records():
