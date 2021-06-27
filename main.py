@@ -1,13 +1,15 @@
 from pprint import pprint as pp
-from flask import Flask, flash, redirect, render_template, request, url_for, current_app
+from flask import Flask, flash, redirect, render_template, request, url_for, current_app, Blueprint
 from plans import plans
+#from .extensions import mongo
+main = Blueprint('main', __name__)
 
 app = Flask(__name__)
 app.register_blueprint(plans, url_prefix="/plans")
 
 @app.route('/')
 def index():
-	return current_app.send_static_file('main_page.html')
+	return render_template('main_page.html')
 
 @app.route('/categories')
 def categories():

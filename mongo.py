@@ -12,9 +12,9 @@ app = Flask(__name__)
 #     'host': 'localhost',
 #     'port': 27017
 # }
-password = os.environ.get("DB_PASSWORD")
+DB_URI = os.environ.get('DB_URI')
 db = MongoEngine()
-client = pymongo.MongoClient("mongodb+srv://halalAdmin:" + password + "@cluster0.mnwcg.mongodb.net/HalalDB?retryWrites=true&w=majority")
+client = MongoEngine.MongoClient(DB_URI)
 db = client.test
 db.init_app(app)
 
